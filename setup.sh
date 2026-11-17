@@ -22,13 +22,14 @@ step "earshot" $PIP "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot"
 # HyperFrames CLI
 step "hyperframes" npm i -g --silent hyperframes
 
-# Skills: ADE repo + Remotion's official skills -> ~/.claude/skills
+# Skills: ADE repo + Remotion's official skills -> ~/.claude/skills; ADE's CLAUDE.md -> ~/.claude/CLAUDE.md
 SK=$HOME/.claude/skills
 skills() {
   t=$(mktemp -d) && mkdir -p "$SK" &&
-  git clone -q --depth 1 "$1" "$t/r" && cp -r "$t/r/skills/." "$SK/" && rm -rf "$t"
+  git clone -q --depth 1 "$1" "$t/r" && cp -r "$t/r/skills/." "$SK/" &&
+  { [ ! -f "$t/r/CLAUDE.md" ] || [ "$2" != prefs ] || cp "$t/r/CLAUDE.md" "$HOME/.claude/CLAUDE.md"; } && rm -rf "$t"
 }
-step "skills: ADE" skills https://github.com/adeflame01/ADE.git
+step "skills + prefs: ADE" skills https://github.com/adeflame01/ADE.git prefs
 step "skills: Remotion" skills https://github.com/remotion-dev/skills.git
 
 # earshot listening models (~1.1 GB), last so everything else is ready first
