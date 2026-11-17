@@ -11,3 +11,9 @@ at the start of every new session.
 
 Also downloaded fresh each session (not stored here): the 13 Remotion skills from
 [remotion-dev/skills](https://github.com/remotion-dev/skills) (Remotion License).
+
+## Setup script
+
+`setup.sh` is a copy of the setup script saved on my Default cloud environment (the environment holds the copy that runs).
+It installs ffmpeg 8.1, yt-dlp, librosa, Whisper (CPU PyTorch), earshot + its models and the HyperFrames CLI,
+then copies these skills and the Remotion skills into `~/.claude/skills/`. Log: `/tmp/ade-setup.log`.
