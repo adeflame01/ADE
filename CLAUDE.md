@@ -12,3 +12,8 @@ Copied to `~/.claude/CLAUDE.md` by the setup script, so these apply in every clo
 - Use openverse-sfx's tools to finish: `sfx_normalize.py` for levels, `beat_grid.py` for beat timing and
   `verify_mix.py` on the exported MP4. Iterate until it passes (-16 LUFS, true peak below -4 dBFS).
 - Write `credits.txt` for any sound that needs attribution.
+
+## Recreating a reference video
+
+- Rebuild it with the free HyperFrames tools (hyperframes skill, ffmpeg, yt-dlp, local `hyperframes render`).
+- Don't use paid features (HyperFrames Pro `hyperframes reverse`, HeyGen cloud render or avatars) unless I ask.
