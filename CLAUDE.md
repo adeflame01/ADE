@@ -17,3 +17,10 @@ Copied to `~/.claude/CLAUDE.md` by the setup script, so these apply in every clo
 
 - Rebuild it with the free HyperFrames tools (hyperframes skill, ffmpeg, yt-dlp, local `hyperframes render`).
 - Don't use paid features (HyperFrames Pro `hyperframes reverse`, HeyGen cloud render or avatars) unless I ask.
+
+## Watching videos (watch skill)
+
+- First use in a session: configure it without asking me:
+  `setup.py --engine local`, then `setup.py --backend none --detail balanced`.
+- Use the local engine (frames + captions on this machine). Don't send videos to Gemini unless I ask.
+- For a video with no captions, transcribe it with the installed `whisper` CLI instead of installing WhisperX.
