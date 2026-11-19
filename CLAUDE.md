@@ -24,3 +24,5 @@ Copied to `~/.claude/CLAUDE.md` by the setup script, so these apply in every clo
   `setup.py --engine local`, then `setup.py --backend none --detail balanced`.
 - Use the local engine (frames + captions on this machine). Don't send videos to Gemini unless I ask.
 - For a video with no captions, transcribe it with the installed `whisper` CLI instead of installing WhisperX.
+- YouTube blocks downloads from cloud sessions ("confirm you're not a bot"). For a YouTube link, ask me to upload
+  the video file instead; don't use my cookies. Other sites (Vimeo, X, direct links) can be tried.
