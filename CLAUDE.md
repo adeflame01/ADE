@@ -26,3 +26,10 @@ Copied to `~/.claude/CLAUDE.md` by the setup script, so these apply in every clo
 - For a video with no captions, transcribe it with the installed `whisper` CLI instead of installing WhisperX.
 - YouTube blocks downloads from cloud sessions ("confirm you're not a bot"). For a YouTube link, ask me to upload
   the video file instead; don't use my cookies. Other sites (Vimeo, X, direct links) can be tried.
+
+## Rendering
+
+- Remotion in cloud sessions: pass the preinstalled browser to every render and still:
+  `--browser-executable=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell`
+  (if that version folder is gone, use whatever `ls /opt/pw-browsers` shows).
+- When a skill says to synthesize sound effects in code, use earshot's bank first (see Sound design).

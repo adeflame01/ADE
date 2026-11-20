@@ -8,6 +8,7 @@ at the start of every new session.
 | lemo-opuscar | [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) | MIT / CC-BY-NC-4.0 |
 | hyperframes, hyperframes-cli, hyperframes-registry, media-use, style-sampling, slideshow, figma, remotion-to-hyperframes | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 |
 | earshot, real-sound | [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot) | MIT |
+| remotion-motion-graphics | [haidrrrry/claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill) | MIT |
 | watch | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | MIT |
 | openverse-sfx | [Varnan-Tech/opendirectory](https://github.com/Varnan-Tech/opendirectory) | MIT |
 
